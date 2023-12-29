@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Author" content="Abugh Stephen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>eagle flinch site survey</title>
+    </head>
+    <body>
+        <h2><center>QUick Survey</center></h2>
+        <form
+            action="https://httpbin.org/post"
+            method="post"
+            accept-charset="utf-8"
+        >
+            <ul>
+                <li>
+                    <label for="Surname">Surname</label>
+                    <input
+                        type="text"
+                        name="Surname"
+                        id="Surname"
+                        value=""
+                        autofocus
+                    />
+                </li>
+                <li>
+                    <label for="firstName">firstName</label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        value=""
+                    />
+                </li>
+                <li>
+                    <label for="lastName">lastName</label>
+                    <input type="text" name="lastName" id="lastName" value="" />
+                </li>
+                <li>
+                    <label for="tel">tel</label>
+                    <input
+                        type="number"
+                        name="tel"
+                        id="tel"
+                        value="[0-9]{3} [0-9]{4} [0-9]{4}"
+                        
+                    />
+                </li>
+                <li>
+                    <select
+                        name="favourite foods"
+                        id="favourite foods"
+                        multiple
+                    >
+                        <optgroup>
+                            <option value="Vegetables">Vegetables</option>
+                            <option selected>carrot</option>
+                            <option>yam</option>
+                            <option>pumpkin</option>
+                            <option>greenbeans</option>
+                        </optgroup>
+                        <optgroup value="fruits">
+                            <option>Pawpaw</option>
+                            <option>Mango</option>
+                            <option>Cocumba</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <textarea
+                        name="coment"
+                        id="coment"
+                        rows="8"
+                        cols="40"
+                        placeholder="how is the website?"
+                    ></textarea>
+                </li>
+            </ul>
+            <button type="submit">SUBMIT</button>
+            <br />
+            <br />
+            <button type="reset">RESET</button>
+        </form>
+    </body>
+</html>
